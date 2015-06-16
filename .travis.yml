@@ -1,1 +1,6 @@
 language: go
+deploy:
+    api_key: "96f69ee81322e73c63a4237425f214e3fabf900c"
+after_success:
+    - git checkout staging
+    - git merge master
